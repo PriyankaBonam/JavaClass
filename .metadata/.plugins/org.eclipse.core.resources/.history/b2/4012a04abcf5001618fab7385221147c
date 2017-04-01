@@ -1,0 +1,50 @@
+// Final and Static are not inherited 
+package com.test.demo;
+
+class A {
+	// we cannot write static/final variable inside a function
+	static int i;
+	final double pi=3.14;
+	public static void main(String args[])
+	{
+		System.out.println("Inside : Inheritance Class");
+		i=10;
+	    System.out.println("Class Inheritance Abort");	
+	}
+
+}
+
+class B extends A
+{
+	int j;
+	
+	 static void print()
+	 {
+		 A a=new A();
+		 B b=new B();
+		 System.out.println("Inside : Class B : Function print()");
+		 System.out.println(A.i);
+		 System.out.println(a.pi);
+		  b.j =20;
+		 System.out.println(b.j);
+	 }
+	}
+
+
+public class Inheritance extends B
+{
+	public static void main(String args[])
+	{
+		System.out.println("Inside funtion : main()");
+// we cannot extend final variable 
+		A a=new A();
+		 System.out.println("pi":"+a.pi);
+		 System.out.println("i:"+i);
+		 B b=new B();
+		 System.out.println("j"+b.j);
+		 int k =10;
+		 System.out.println("Abort Class : Inheritance");
+			
+	}
+	
+}

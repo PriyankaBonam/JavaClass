@@ -1,0 +1,12 @@
+package com.test.demo;
+
+public class ImportingClass {
+	public static void main(String[] args) {
+		
+		Pryamid3 p=new Pryamid3();
+		System.out.println(p.j);
+		
+		
+	}
+
+}

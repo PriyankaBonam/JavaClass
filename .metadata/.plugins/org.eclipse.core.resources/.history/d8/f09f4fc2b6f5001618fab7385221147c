@@ -1,0 +1,33 @@
+//displaying the duplicate characters in a String
+import java.util.Scanner;
+
+public class DuplicateCharacterInString {
+
+	public static void main(String args[])
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the String: ");
+		String string=s.next();
+		char[] Array=string.toLowerCase().toCharArray();
+		int length=string.length();
+		int k =1;
+		
+		for(int i=0;i<length;i++)
+		{
+			for(int j=i+1;j<length;j++)
+			{
+				if(i!=j && Array[i]==Array[j])
+				 k++;
+			}
+			if(k>1)
+				System.out.println("The character :  "+Array[i]+"\n\trepeated "+k+"times");
+			k=1;
+			}
+		
+		
+		
+		
+		
+	}
+	
+}

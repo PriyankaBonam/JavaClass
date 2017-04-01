@@ -1,0 +1,17 @@
+package com.test.demo;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.Scanner;
+
+public class ScannerDelimiter {
+	
+	public static void main(String args[])
+	{
+		Scanner s=new Scanner(new BufferedReader(new FileReader("C:\\Users\\inpbonam\\Desktop")));
+		String Current="";
+		s.useDelimiter(","):
+					
+	}
+
+}

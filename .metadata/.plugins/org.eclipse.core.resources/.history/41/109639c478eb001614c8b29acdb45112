@@ -1,0 +1,33 @@
+
+public class ProgForLoop {
+	public static void main(String args[])
+	{
+	  //Declaration
+		int i ;
+		
+		// basic for loop for odd and even numbers
+		for(i=5; i>1; i--)
+		{
+			if (i%2==1)
+			System.out.println("Odd:" +i);
+			else
+			System.out.println("Even:" +i);	
+		}
+		
+		//for loop without Initialisation 
+		System.out.println("Without Initialization");
+		for( ; i <10 ; i ++)
+		{
+		System.out.print(i);		
+		}
+		
+		//Usage of For Loop as in While Loop ie, without initialization and counter
+		System.out.println("\nUsage of For Loop as in While Loop");
+		for( ; i>0 ;)
+		{
+		System.out.print(i);
+		i--;
+		}
+	}
+
+}

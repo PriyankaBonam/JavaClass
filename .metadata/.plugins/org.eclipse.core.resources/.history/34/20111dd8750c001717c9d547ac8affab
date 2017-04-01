@@ -1,0 +1,25 @@
+package com.test.demo;
+
+public class functionObject {
+	
+	functionObject f= new functionObject();
+	D d=new D();
+	d.fun(f);
+	
+}
+
+class D
+{
+	functionObject fun(functionObject f)
+	{
+		System.out.println("Insed Class D ");
+		return f;
+	}
+}
+
+class E
+{
+	public static void main(String[] args) {
+		
+	}
+}

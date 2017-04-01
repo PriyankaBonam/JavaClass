@@ -1,0 +1,45 @@
+
+// Data Type Example
+// Invalid and Valid scenario's based on the range values
+// Ranges of Data Types:
+// Byte : -128 to 127
+// Short -32768 to 32767
+
+
+class DataTypes
+{
+ public static void main(String args[])
+  { 
+    
+// Declaration
+ 	byte a;
+    short b;
+    int c;
+    long e;
+    char f;
+    float g;
+    double h;
+    
+ // Printing default Values
+ System.out.println("/nByte :" +a+"/nShort : " +b+ "/n Int: " +c+"/n Long : "+e+"/n Char : " +f+"/nFloat : "+g+"/nDouble : " +h);
+ 
+ //Assigning values to Variables 
+     a=127; 
+     a=-128;
+     b=32767;
+     /* the range of byte is -128 to 127 so when a is assigned with value not in range
+     (eg : -129 or 128 or True or 0.0 Type Mismatch Error is displayed*/
+  // Assigning wrong value for varaible  
+  	// a=0.0;
+  	// b=-32769;
+    // b=35769;
+    // b=0.0;	
+    // b=True;
+   
+   //Printing the value
+       System.out.println(a);  
+       System.out.println(b); 
+     
+     }   
+    }
+    

@@ -1,0 +1,42 @@
+//Priting the reverse of given number
+import java.util.Scanner;
+
+public class ReverseNumber {
+
+	public static void main(String args[])
+	{
+		int reversenum=0,i=0;
+		Scanner s =new Scanner(System.in);
+	System.out.println("Enter number : ");
+	int number=s.nextInt();
+	
+	while (number!=0)
+	{
+		reversenum = reversenum * 10;
+		System.out.println(reversenum);
+	if(i==0)
+	{
+		while(number%10==0)
+		{
+			i++;
+		}
+	}
+	if(i==0)
+		i=100;
+				reversenum = reversenum * 10;
+	reversenum = reversenum + number%10;
+        System.out.println(reversenum);
+        number = number/10;
+        System.out.println(number);
+	}
+	System.out.println("The reverse number : ");
+	if(i!=100)
+	{
+		while(i>0)
+			System.out.print(0);
+		i--;
+	}
+	System.out.print(reversenum);
+	
+	}
+}

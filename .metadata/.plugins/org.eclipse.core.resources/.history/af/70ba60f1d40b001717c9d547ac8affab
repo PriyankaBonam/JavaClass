@@ -1,0 +1,53 @@
+package com.test.demo;
+
+class C3 
+{
+	C3()
+	{
+		System.out.println("Inside constructor of C3");
+	}
+	
+	static
+	{
+		System.out.println("Inside Static Block : C3 Class");
+	}
+	
+	{
+		System.out.println("Inside Non Static Block : C3 Class");
+	}
+}
+	class C2 extends C3
+	{
+		C2()
+		{
+			System.out.println("Inside Constructor");
+		}
+		static 
+		{
+			System.out.println("Inside Static Block : C2 Class");
+		}
+		{
+			System.out.println("Inside Non Static Block : C2 Class");
+		}
+	}
+	
+	public class constructorChaining extends C2
+  {
+	constructorChaining()
+	{
+	 System.out.println("Inside Constructor of constructor chaining class");
+	}
+	
+	{
+		System.out.println("Instance Block : constructorChaining Class");
+	}
+	
+	static 
+	{
+		System.out.println("Static Block : constructorChaining Class");
+	}
+	
+	constructorChaining  c=new constructorChaining();
+	
+  }
+

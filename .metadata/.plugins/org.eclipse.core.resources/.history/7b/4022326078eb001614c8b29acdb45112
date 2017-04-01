@@ -1,0 +1,20 @@
+
+public class ProgForLoop {
+	public static void main(String args[])
+	{
+	  //Declaration
+		int i ;
+		
+		// basic for loop for printing numbers
+		for(i=10; i>1; i--)
+		{
+			if (i%2==1)
+			System.out.println("Odd:" +i);
+			else
+			System.out.println("Even:" +i);	
+			
+		}
+		
+	}
+
+}

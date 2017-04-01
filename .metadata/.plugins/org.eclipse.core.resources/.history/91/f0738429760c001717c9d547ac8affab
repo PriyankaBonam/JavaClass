@@ -1,0 +1,25 @@
+package com.test.demo;
+
+class  E{
+	
+	E f= new E();
+	D d=new D();
+    d.
+	
+}
+
+class D
+{
+	public functionObject fun(E f)
+	{
+		System.out.println("Inside Class D ");
+		return f;
+	}
+}
+
+public class functionObject
+{
+	public static void main(String[] args) {
+		
+	}
+}

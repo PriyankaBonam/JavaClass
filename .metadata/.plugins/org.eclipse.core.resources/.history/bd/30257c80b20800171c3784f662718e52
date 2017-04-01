@@ -1,0 +1,44 @@
+//File  : priya,testing,delimiter,concept,using,scanner class,
+
+package com.test.demo;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class ScannerDelimiter {
+	
+
+	public static void main(String args[]) {
+		Scanner s = null;
+		try {
+			s = new Scanner(new BufferedReader(new FileReader(
+					"C:\\Users\\inpbonam\\Desktop\\delimiter.csv")));
+			s.useDelimiter(",");
+			while (s.hasNext()) {
+				System.out.println(s.next());
+
+			}
+		} catch (IOException e) {
+			System.out.println("Exception : IO Exception");
+			e.printStackTrace();
+		} catch (Exception e) {
+			System.out.println("Exception");
+			e.printStackTrace();
+
+		} finally {
+			try {
+				if(s==null)
+					System.out.println("***:"+s);
+				if (s!= null)
+					{
+					System.out.println("***:"+s);
+					s.close();
+					}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

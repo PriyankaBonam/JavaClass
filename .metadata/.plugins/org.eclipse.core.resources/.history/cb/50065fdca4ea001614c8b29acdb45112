@@ -1,0 +1,29 @@
+
+class DataTypes
+{
+ public static void main(String args[])
+  { 
+   byte a; 
+    a=127; 
+     a=-128;
+     /* the range of byte is -128 to 127 so when a is assigned with value not in range
+     (eg : -129 or 128 or True or 0.0 Type Mismatch Error is displayed*/
+    a=0.0;
+    System.out.println(a);
+    
+    short b;
+    /* range of short -32768 to 32768*/
+    b=32767;
+    b=-32769;
+    b=35769;
+    b=0.0;	
+    b=True;
+    
+    
+    
+    
+    }
+    
+    
+    }
+    

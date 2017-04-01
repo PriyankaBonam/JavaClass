@@ -1,0 +1,17 @@
+
+public class ProgWhileLoop {
+
+	public static void main(String args[])
+	{
+	
+		//Initialization 
+		int a=10;
+		
+		//checking the condition : a must be positive
+		while (a>0)
+		{
+			a--; // decrement of a by 1 
+		}
+	System.out.println("Loop done :)");	
+	}
+}

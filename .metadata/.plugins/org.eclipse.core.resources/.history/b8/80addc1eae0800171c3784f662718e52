@@ -1,0 +1,32 @@
+package com.test.demo;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class ScannerDelimiter {
+	
+	public static void main(String args[]) 
+	{
+		try
+		{
+			Scanner s=new Scanner(new BufferedReader(new FileReader("C:\\Users\\inpbonam\\Desktop")));
+		String Current="";
+		s.useDelimiter(",");
+		while(s.hasNext())
+		{
+			System.out.println(s.next());
+			
+		}
+		}
+			catch(IOException e)
+				{
+					e.printStackTrace();
+				}
+			catch(Exception e)
+			{
+		e.printStackTrace();	
+		}
+	}
+
+}

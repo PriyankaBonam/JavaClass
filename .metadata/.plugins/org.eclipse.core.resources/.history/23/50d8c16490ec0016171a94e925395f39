@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class Powerofnumber {
+	public static void main(String args[])
+	{
+			Scanner S= new Scanner(System.in);
+		System.out.println("Enter the number");
+		int number=S.nextInt();
+		System.out.println("Enter the limit:");
+		int limit=S.nextInt();
+		int compoundvalue=0;
+		for (int i=1; i <limit;i++)
+		{
+			compoundvalue=compoundvalue+number*2;
+			
+		}
+		System.out.println(compoundvalue);
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Inline local variable &apos;Overview.main().s&apos; in &apos;Overview.main()&apos;&#x0D;&#x0A;- Original project: &apos;Java&apos;&#x0D;&#x0A;- Original element: &apos;Overview.main().s&apos;" description="Inline local variable &apos;s&apos;" id="org.eclipse.jdt.ui.inline.temp" input="/src&lt;{Overview.java" selection="107 24" stamp="1486790024475" version="1.0"/>
+</session>

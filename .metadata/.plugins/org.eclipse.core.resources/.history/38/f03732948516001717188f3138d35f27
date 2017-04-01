@@ -10,6 +10,5 @@ public class test {
 			System.out.println(i);
 		}
 		System.out.println("End");
-		System.out.println("Git hub");
 	}
 }
